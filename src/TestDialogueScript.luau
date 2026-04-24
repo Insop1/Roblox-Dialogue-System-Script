@@ -26,7 +26,7 @@ ExampleBlock1 = {
 	Replies = {
 		{
 			Text = nil, -- You can only use nil if there are only one element in replies. It is used to conjoin dialogues without replies.
-			NextBlock = "Block2" -- The next block to go to after the reply.
+			NextBlock = "Block2", -- The next block to go to after the reply.
 			Function = nil, -- The function that will excecute after reply. You can also put a function even if there are no text.
 		},
 	},
@@ -40,12 +40,12 @@ ExampleBlock2 = {
 	Replies = { -- This has two elements in replies so there can't be a reply element with a nil text.
 		{
 			Text = "What??", -- Reply text
-			NextBlock = "Block2" -- The next block to go to after the reply.
+			NextBlock = "Block2", -- The next block to go to after the reply.
 			Function = nil, -- The function that will excecute after reply, will not execute if Text is nil.
 		},
 		{
 			Text = "Hey", -- Reply text
-			NextBlock = nil -- Setting this to nil will stop the dialogue
+			NextBlock = nil, -- Setting this to nil will stop the dialogue
 			Function = function()
 				print("Hello")
 			end, -- The function that will excecute after reply, will not execute if Text is nil.
@@ -61,7 +61,7 @@ ExampleBlock3 = {
 	Replies = { -- This is acceptable because after the player clicks on the reply, it'll end the dialogue.
 		{
 			Text = "Bye", -- Reply text
-			NextBlock = nil -- Setting to nil will end the dialogue
+			NextBlock = nil, -- Setting to nil will end the dialogue
 			Function = nil, -- The function that will excecute after reply, will not execute if Text is nil.
 		},
 	},
@@ -76,7 +76,7 @@ ExampleBlock4 = {
 		{
 			Text = nil, -- Setting both Text and Nextblock works but I don't recommend unless you want to cut dialogue short. 
 						-- By doing that, you should also manually adjust the seconds for better timing.
-			NextBlock = nil 
+			NextBlock = nil, 
 			Function = nil, -- The function that will excecute after reply, will not execute if Text is nil.
 		},
 	},
@@ -94,12 +94,12 @@ ExampleBlockToNotDo1 = {
 		{
 			Text = nil, -- Setting this to nil will cause an error because I haven't written code for a nil reply within 2 or more replies. 
 						-- It also doesn't make sense to have a nil reply with multiple replies.
-			NextBlock = "Block2" -- The next block to go to after the reply.
+			NextBlock = "Block2", -- The next block to go to after the reply.
 			Function = nil, -- The function that will excecute after reply, will not execute if Text is nil.
 		},
 		{
 			Text = "Hey", -- Reply text
-			NextBlock = nil -- Setting this to nil will stop the dialogue
+			NextBlock = nil, -- Setting this to nil will stop the dialogue
 			Function = nameFunction -- this is acceptable if nameFunction is already defined in the script.
 		},
 	},

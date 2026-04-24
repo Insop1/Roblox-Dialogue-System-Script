@@ -12,8 +12,8 @@ A Roblox dialogue system inspired by Disco Elysium, supporting branching convers
 - **Customizable Icons** for dialogues 
 
 ## Installation
-1. Download `InsopDialogueKit.rbxm` (Or download from Roblox Plugins)
-    2. In Roblox Studio: right-click in Explorer, insert from file, select the .rbxm
+1. Download `InsopDialogueKit.rbxm`
+2. In Roblox Studio: right-click in Explorer, insert from file, select the .rbxm. (Skip if you download from Roblox Plugin)
 3. Place **DialoguePrompts** in Workspace
 4. Place **InsopDialogueGui** into StarterGui
 5. In **DialoguePrompts**, add your object of choice with a ProximityPrompt

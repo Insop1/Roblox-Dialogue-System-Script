@@ -2,6 +2,8 @@
 
 A Roblox dialogue system inspired by Disco Elysium, supporting branching conversations and scalable dialogue trees. Plugin is published here: https://create.roblox.com/store/asset/84811527096906/InsopDialogueKit?assetType=Plugin&externalSource=www
 
+![Dialogue demo](assets/RobloxDialogueDemo.gif)
+
 ## Features
 - **Branching dialogue** with multiple choices and conditional paths
 - **Callback system** — replies can execute arbitrary functions
